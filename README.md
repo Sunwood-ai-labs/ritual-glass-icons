@@ -1,9 +1,10 @@
 <div align="center">
-  <img src="./assets/ritual-glass-mark.svg" alt="Ritual Glass Icons mark" width="112" />
-  <h1>Ritual Glass Icons</h1>
+  <img src="./assets/ritual-glass-mark.svg" alt="SVG Concept Lab mark" width="112" />
+  <h1>SVG Concept Lab</h1>
   <p>
-    Ten premium SVG icons built around orbit lines, prism facets, halos, and quiet light.<br />
-    The repository ships as a zero-build static showcase with GitHub Pages and CI-ready validation.
+    A growing repository of concept-driven SVG collections built as experiments with the Codex
+    <code>frontend-design</code> skill.<br />
+    Ritual Glass is the first published set, and the repository is now structured to grow into multiple design concepts.
   </p>
 </div>
 
@@ -12,26 +13,34 @@
 </p>
 
 <p align="center">
-  <img alt="HTML" src="https://img.shields.io/badge/HTML-static%20site-0B1320?style=flat-square" />
+  <img alt="Collections" src="https://img.shields.io/badge/Collections-1%20live-0B1320?style=flat-square" />
   <img alt="SVG" src="https://img.shields.io/badge/SVG-10%20icons-0B1320?style=flat-square" />
   <img alt="Pages" src="https://img.shields.io/badge/GitHub%20Pages-ready-0B1320?style=flat-square" />
   <img alt="License" src="https://img.shields.io/badge/License-MIT-0B1320?style=flat-square" />
 </p>
 
 <p align="center">
-  <img src="./assets/ritual-glass-hero.svg" alt="Ritual Glass Icons hero artwork" width="960" />
+  <img src="./assets/ritual-glass-hero.svg" alt="SVG Concept Lab hero artwork" width="960" />
 </p>
 
 > This repository is an experiment repo for the Codex `frontend-design` skill.  
-> The SVG designs in this collection were created with that skill.
+> The SVG designs in the published collections are created with that skill.
 
 ## ✨ Overview
-This repository packages a curated set of ten decorative SVG icons and a static gallery page for browsing them in one place. The visual direction stays intentionally narrow: cool glass gradients, pale highlights, gentle gold accents, and a ceremonial interface mood.
+This repository is no longer modeled as a single fixed icon drop. It is now organized as a concept lab: a top-level catalog plus one folder per collection. That means future sets can be added without hard-coding every card into the gallery page or rewriting the validation rules around a single icon count.
 
-The project is small on purpose. Instead of adding a separate docs stack, the repository focuses on strong bilingual READMEs, a polished static site, and lightweight mechanical validation.
+The current published collection is **Ritual Glass**, a ceremonial set built around orbit lines, prism facets, halos, and quiet light.
+
+## 🧭 Collection Registry
+| Slug | Status | Icons | Manifest |
+| --- | --- | --- | --- |
+| `ritual-glass` | `published` | 10 | [`collections/ritual-glass/collection.json`](./collections/ritual-glass/collection.json) |
+
+The global registry lives at [`collections/manifest.json`](./collections/manifest.json).  
+The static site reads that registry and renders collections from data instead of from fixed HTML cards.
 
 ## 🚀 Quick Start
-Serve the project locally with `uv` and open the gallery in your browser.
+Serve the repository locally and open the gallery:
 
 ```powershell
 uv run python -m http.server 4173
@@ -39,54 +48,100 @@ uv run python -m http.server 4173
 
 Then visit `http://127.0.0.1:4173`.
 
-## 🖼️ SVG Preview
+## 🖼️ Live SVG Preview
 <p align="center">
-  <img src="./icons/01-luminous-orbit-seal.svg" alt="Luminous Orbit Seal" width="72" />
-  <img src="./icons/02-prism-bloom.svg" alt="Prism Bloom" width="72" />
-  <img src="./icons/03-crescent-portal.svg" alt="Crescent Portal" width="72" />
-  <img src="./icons/04-comet-loop.svg" alt="Comet Loop" width="72" />
-  <img src="./icons/05-archive-halo.svg" alt="Archive Halo" width="72" />
+  <img src="./collections/ritual-glass/icons/01-luminous-orbit-seal.svg" alt="Luminous Orbit Seal" width="72" />
+  <img src="./collections/ritual-glass/icons/02-prism-bloom.svg" alt="Prism Bloom" width="72" />
+  <img src="./collections/ritual-glass/icons/03-crescent-portal.svg" alt="Crescent Portal" width="72" />
+  <img src="./collections/ritual-glass/icons/04-comet-loop.svg" alt="Comet Loop" width="72" />
+  <img src="./collections/ritual-glass/icons/05-archive-halo.svg" alt="Archive Halo" width="72" />
 </p>
 
 <p align="center">
-  <img src="./icons/06-lumen-orbit.svg" alt="Lumen Orbit" width="72" />
-  <img src="./icons/07-prism-petal.svg" alt="Prism Petal" width="72" />
-  <img src="./icons/08-pulse-crown.svg" alt="Pulse Crown" width="72" />
-  <img src="./icons/09-monolith-lens.svg" alt="Monolith Lens" width="72" />
-  <img src="./icons/10-aether-knot.svg" alt="Aether Knot" width="72" />
+  <img src="./collections/ritual-glass/icons/06-lumen-orbit.svg" alt="Lumen Orbit" width="72" />
+  <img src="./collections/ritual-glass/icons/07-prism-petal.svg" alt="Prism Petal" width="72" />
+  <img src="./collections/ritual-glass/icons/08-pulse-crown.svg" alt="Pulse Crown" width="72" />
+  <img src="./collections/ritual-glass/icons/09-monolith-lens.svg" alt="Monolith Lens" width="72" />
+  <img src="./collections/ritual-glass/icons/10-aether-knot.svg" alt="Aether Knot" width="72" />
 </p>
 
 <p align="center">
-  <sub>The README renders the original SVG assets directly. Browser verification screenshots are still available in <code>assets/checks/</code>.</sub>
+  <sub>The README renders the original SVG assets directly from the current collection folder.</sub>
 </p>
 
-## 🧩 Icon Set
-| No. | Name | File |
-| --- | --- | --- |
-| 01 | Luminous Orbit Seal | [`icons/01-luminous-orbit-seal.svg`](./icons/01-luminous-orbit-seal.svg) |
-| 02 | Prism Bloom | [`icons/02-prism-bloom.svg`](./icons/02-prism-bloom.svg) |
-| 03 | Crescent Portal | [`icons/03-crescent-portal.svg`](./icons/03-crescent-portal.svg) |
-| 04 | Comet Loop | [`icons/04-comet-loop.svg`](./icons/04-comet-loop.svg) |
-| 05 | Archive Halo | [`icons/05-archive-halo.svg`](./icons/05-archive-halo.svg) |
-| 06 | Lumen Orbit | [`icons/06-lumen-orbit.svg`](./icons/06-lumen-orbit.svg) |
-| 07 | Prism Petal | [`icons/07-prism-petal.svg`](./icons/07-prism-petal.svg) |
-| 08 | Pulse Crown | [`icons/08-pulse-crown.svg`](./icons/08-pulse-crown.svg) |
-| 09 | Monolith Lens | [`icons/09-monolith-lens.svg`](./icons/09-monolith-lens.svg) |
-| 10 | Aether Knot | [`icons/10-aether-knot.svg`](./icons/10-aether-knot.svg) |
+## 🧱 Repository Model
+- [`collections/manifest.json`](./collections/manifest.json) is the source of truth for which collections are published.
+- Each collection lives under `collections/&lt;slug&gt;/` and defines its own metadata in `collection.json`.
+- Shared repository assets stay under [`assets`](./assets), while collection-specific icons and checks stay inside each collection folder.
+- [`scripts/site-catalog.mjs`](./scripts/site-catalog.mjs) renders the gallery page from manifest data.
+- [`scripts/validate-site.mjs`](./scripts/validate-site.mjs) validates registry structure, collection manifests, file existence, and SVG integrity.
 
-## 🛠️ Repository Layout
+## ➕ Add a New Collection
+Bootstrap a new collection folder with [`scripts/new-collection.mjs`](./scripts/new-collection.mjs):
+
+```powershell
+node .\scripts\new-collection.mjs --slug aurora-arc --name "Aurora Arc" --ja-name "Aurora Arc"
+```
+
+Then:
+
+1. Fill in `collections/<slug>/collection.json`.
+2. Drop SVG files into `collections/<slug>/icons/` using `NN-kebab-name.svg`.
+3. Add optional browser checks to `collections/<slug>/checks/`.
+4. Run `node .\scripts\validate-site.mjs`.
+5. Preview locally with `uv run python -m http.server 4173`.
+
+## 🛠️ Contributor Checklist
+- Use a lowercase hyphenated slug such as `ritual-glass` or `aurora-arc`.
+- Name SVG files as `NN-kebab-name.svg`.
+- Keep `<svg>`, `viewBox`, and `<title>` in every icon file.
+- Update collection copy in both English and Japanese fields inside the manifest.
+- Keep the collection registry focused: publish only concept sets that are coherent as a family.
+
+More detailed maintenance notes live in [`CONTRIBUTING.md`](./CONTRIBUTING.md) and [`collections/README.md`](./collections/README.md).
+
+## ✅ Verification
+Run the structural validator:
+
+```powershell
+node .\scripts\validate-site.mjs
+```
+
+This validator confirms:
+
+- required repository files exist
+- the collection registry resolves to valid collection manifests
+- every published SVG file exists and includes `<svg>`, `viewBox`, and `<title>`
+- the static site references the catalog renderer rather than a fixed list of cards
+- the bilingual READMEs link to each other and document the collection workflow
+
+You can also smoke-test the scaffold flow in a temporary directory:
+
+```powershell
+node .\scripts\smoke-test-collection-flow.mjs
+```
+
+## 📁 Repository Layout
 ```text
 .
 |-- .github/workflows/
 |-- assets/
-|   |-- checks/
 |   |-- favicon.svg
 |   |-- ritual-glass-hero.svg
 |   `-- ritual-glass-mark.svg
-|-- icons/
+|-- collections/
+|   |-- manifest.json
+|   `-- ritual-glass/
+|       |-- checks/
+|       |-- collection.json
+|       `-- icons/
 |-- scripts/
+|   |-- new-collection.mjs
+|   |-- smoke-test-collection-flow.mjs
+|   |-- site-catalog.mjs
 |   |-- stage-pages.ps1
 |   `-- validate-site.mjs
+|-- CONTRIBUTING.md
 |-- index.html
 |-- LICENSE
 |-- README.ja.md
@@ -94,26 +149,6 @@ Then visit `http://127.0.0.1:4173`.
 |-- robots.txt
 `-- site.webmanifest
 ```
-
-## ✅ Verification
-The repository includes a lightweight validation path for CI and local checks.
-
-```powershell
-node .\scripts\validate-site.mjs
-```
-
-The validator confirms:
-
-- required metadata exists in `index.html`
-- all ten SVG files exist and expose a `viewBox`
-- the showcase references all ten icons exactly once
-- the bilingual README language switch is wired both ways
-- Pages-ready assets and workflow files exist
-
-## 📝 Notes
-- `index.html` imports Google Fonts for the editorial typography used by the gallery.
-- The Pages workflow publishes the repository root as a staged static artifact rather than relying on a build toolchain.
-- Browser verification screenshots live in [`assets/checks`](./assets/checks).
 
 ## 📄 License
 This project is released under the [`MIT License`](./LICENSE).

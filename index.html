@@ -3,37 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ritual Glass Icons</title>
+    <title>SVG Concept Lab</title>
     <meta
       name="description"
-      content="A polished static gallery for ten ceremonial SVG icons with orbit, prism, and halo motifs."
+      content="A growing repository of concept-driven SVG collections built as frontend-design experiments."
     />
     <meta name="theme-color" content="#06101d" />
-    <meta property="og:title" content="Ritual Glass Icons" />
+    <meta property="og:title" content="SVG Concept Lab" />
     <meta
       property="og:description"
-      content="Ten premium SVG icons presented in a static showcase with cool glass gradients and calm geometry."
+      content="A growing repository of concept-driven SVG collections built as frontend-design experiments."
     />
     <meta property="og:image" content="./assets/ritual-glass-hero.svg" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
     <link rel="manifest" href="./site.webmanifest" />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap");
 
       :root {
         --bg: #06101d;
-        --bg-soft: rgba(9, 18, 34, 0.78);
-        --card: rgba(14, 26, 46, 0.7);
+        --bg-soft: rgba(8, 17, 31, 0.82);
+        --card: rgba(15, 27, 46, 0.72);
         --line: rgba(183, 240, 255, 0.2);
         --text: #edf8ff;
         --muted: #99b7c7;
-        --accent: #8fefff;
-        --accent-warm: #f8d4a0;
+        --collection-surface: #081322;
+        --collection-surface-rgb: 8 19 34;
+        --collection-accent: #8fefff;
+        --collection-accent-rgb: 143 239 255;
+        --collection-warm: #f8d4a0;
+        --collection-warm-rgb: 248 212 160;
       }
 
       * {
         box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
       }
 
       body {
@@ -42,10 +50,10 @@
         color: var(--text);
         font-family: "Manrope", sans-serif;
         background:
-          radial-gradient(circle at 18% 18%, rgba(98, 228, 255, 0.18), transparent 28%),
-          radial-gradient(circle at 80% 14%, rgba(244, 210, 156, 0.12), transparent 26%),
-          radial-gradient(circle at 70% 76%, rgba(112, 122, 255, 0.15), transparent 30%),
-          linear-gradient(160deg, #050c16 0%, #091321 48%, #050b17 100%);
+          radial-gradient(circle at 15% 18%, rgb(var(--collection-accent-rgb) / 0.18), transparent 24%),
+          radial-gradient(circle at 82% 12%, rgb(var(--collection-warm-rgb) / 0.14), transparent 22%),
+          radial-gradient(circle at 74% 76%, rgb(var(--collection-accent-rgb) / 0.09), transparent 30%),
+          linear-gradient(160deg, #040b15 0%, #091321 48%, #050b17 100%);
       }
 
       body::before {
@@ -53,53 +61,103 @@
         position: fixed;
         inset: 0;
         background-image:
-          linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-        background-size: 32px 32px;
-        mask-image: radial-gradient(circle at center, black 45%, transparent 95%);
+          linear-gradient(rgb(255 255 255 / 0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgb(255 255 255 / 0.03) 1px, transparent 1px);
+        background-size: 34px 34px;
+        mask-image: radial-gradient(circle at center, black 42%, transparent 96%);
         pointer-events: none;
       }
 
       main {
-        width: min(1180px, calc(100% - 40px));
+        width: min(1220px, calc(100% - 40px));
         margin: 0 auto;
-        padding: 64px 0 88px;
+        padding: 48px 0 88px;
       }
 
       .hero {
         display: grid;
-        gap: 18px;
-        margin-bottom: 42px;
+        grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+        gap: 28px;
+        align-items: stretch;
+        margin-bottom: 28px;
+      }
+
+      .hero-copy,
+      .hero-visual,
+      .feature-card,
+      .collection-card {
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        background:
+          linear-gradient(180deg, rgb(255 255 255 / 0.07), rgb(255 255 255 / 0)),
+          rgb(var(--collection-surface-rgb) / 0.48);
+        backdrop-filter: blur(22px);
+        box-shadow:
+          inset 0 1px 0 rgb(255 255 255 / 0.08),
+          0 24px 64px rgb(0 0 0 / 0.34);
+      }
+
+      .hero-copy {
+        position: relative;
+        overflow: hidden;
+        padding: 30px;
+      }
+
+      .hero-copy::after,
+      .feature-card::after,
+      .collection-card::after {
+        content: "";
+        position: absolute;
+        inset: auto -14% -38% 44%;
+        height: 180px;
+        background: radial-gradient(circle, rgb(var(--collection-accent-rgb) / 0.18), transparent 62%);
+        pointer-events: none;
       }
 
       .hero-mark {
-        width: 72px;
-        height: 72px;
+        width: 76px;
+        height: 76px;
+        margin-bottom: 20px;
       }
 
-      .eyebrow {
-        margin: 0;
-        letter-spacing: 0.24em;
-        text-transform: uppercase;
-        color: var(--accent);
+      .eyebrow,
+      .collection-card__eyebrow {
+        margin: 0 0 12px;
+        color: var(--collection-accent);
         font-size: 0.76rem;
+        text-transform: uppercase;
+        letter-spacing: 0.22em;
       }
 
-      h1 {
+      h1,
+      h2,
+      h3 {
         margin: 0;
-        max-width: 8ch;
         font-family: "Cormorant Garamond", serif;
-        font-size: clamp(3.4rem, 8vw, 6.4rem);
-        line-height: 0.92;
         font-weight: 600;
       }
 
-      .hero p {
+      h1 {
+        max-width: 8ch;
+        font-size: clamp(3.3rem, 8vw, 6.2rem);
+        line-height: 0.94;
+      }
+
+      #page-description,
+      .feature-summary,
+      .feature-description,
+      .collection-card__header p,
+      .icon-card p {
         margin: 0;
-        max-width: 48rem;
         color: var(--muted);
-        line-height: 1.8;
-        font-size: 1rem;
+        line-height: 1.78;
+      }
+
+      .hero-stack {
+        display: grid;
+        gap: 18px;
+        position: relative;
+        z-index: 1;
       }
 
       .pill-row {
@@ -108,122 +166,395 @@
         gap: 10px;
       }
 
-      .pill {
-        padding: 8px 12px;
-        border: 1px solid rgba(183, 240, 255, 0.18);
+      .meta-pill,
+      .status-pill,
+      .switch-chip,
+      .asset-link,
+      .action-link {
         border-radius: 999px;
-        background: rgba(255, 255, 255, 0.04);
-        color: var(--muted);
+      }
+
+      .meta-pill,
+      .status-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
         font-size: 0.78rem;
         letter-spacing: 0.08em;
         text-transform: uppercase;
+        border: 1px solid rgb(255 255 255 / 0.08);
       }
 
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-        gap: 18px;
+      .meta-pill {
+        background: rgb(255 255 255 / 0.04);
+        color: var(--muted);
       }
 
-      .card {
+      .status-pill {
+        background: rgb(var(--collection-accent-rgb) / 0.12);
+        color: var(--collection-accent);
+      }
+
+      .status-draft {
+        background: rgb(var(--collection-warm-rgb) / 0.12);
+        color: var(--collection-warm);
+      }
+
+      .page-status {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .status-text {
+        color: var(--muted);
+        letter-spacing: 0.04em;
+      }
+
+      .hero-visual {
         position: relative;
         overflow: hidden;
-        padding: 20px;
-        border: 1px solid var(--line);
-        border-radius: 24px;
-        background:
-          linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0)),
-          var(--card);
-        backdrop-filter: blur(18px);
-        box-shadow:
-          inset 0 1px 0 rgba(255, 255, 255, 0.08),
-          0 24px 60px rgba(0, 0, 0, 0.34);
-        transition:
-          transform 220ms ease,
-          border-color 220ms ease,
-          box-shadow 220ms ease,
-          background 220ms ease;
-      }
-
-      .card::after {
-        content: "";
-        position: absolute;
-        inset: auto -10% -45% 35%;
-        height: 120px;
-        background: radial-gradient(circle, rgba(143, 239, 255, 0.16), transparent 62%);
-        pointer-events: none;
-      }
-
-      .icon-wrap {
+        min-height: 360px;
         display: grid;
         place-items: center;
-        aspect-ratio: 1;
-        border-radius: 20px;
-        margin-bottom: 16px;
+        padding: 24px;
+      }
+
+      .hero-visual::before {
+        content: "";
+        position: absolute;
+        inset: 8%;
+        border-radius: 28px;
+        border: 1px solid rgb(var(--collection-accent-rgb) / 0.16);
         background:
-          radial-gradient(circle at 50% 40%, rgba(121, 224, 255, 0.16), transparent 42%),
-          linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
-        border: 1px solid rgba(255, 255, 255, 0.04);
+          radial-gradient(circle at 50% 32%, rgb(var(--collection-accent-rgb) / 0.15), transparent 34%),
+          linear-gradient(180deg, rgb(255 255 255 / 0.06), rgb(255 255 255 / 0.01));
+        transform: rotate(-5deg);
       }
 
-      .icon-wrap img {
-        width: 88px;
-        height: 88px;
+      .hero-visual img {
+        position: relative;
+        z-index: 1;
+        width: min(100%, 480px);
+        height: auto;
       }
 
-      .meta {
+      .switcher-shell {
+        margin-bottom: 24px;
+      }
+
+      .switcher-shell p {
+        margin: 0 0 10px;
+        color: var(--muted);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-size: 0.74rem;
+      }
+
+      .switcher-row {
         display: flex;
-        justify-content: space-between;
-        align-items: baseline;
+        flex-wrap: wrap;
         gap: 12px;
       }
 
-      .meta h2 {
-        margin: 0;
-        font-family: "Cormorant Garamond", serif;
-        font-size: 1.55rem;
+      .switch-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 14px;
+        padding: 12px 16px;
+        border: 1px solid rgb(255 255 255 / 0.08);
+        background: rgb(255 255 255 / 0.04);
+        color: var(--text);
+        cursor: pointer;
+        transition:
+          transform 180ms ease,
+          border-color 180ms ease,
+          background 180ms ease;
+      }
+
+      .switch-chip:hover,
+      .switch-chip[aria-pressed="true"] {
+        transform: translateY(-1px);
+        border-color: rgb(var(--collection-accent-rgb) / 0.42);
+        background: rgb(var(--collection-accent-rgb) / 0.12);
+      }
+
+      .switch-chip:focus-visible,
+      .action-link:focus-visible,
+      .asset-link:focus-visible {
+        outline: 2px solid var(--collection-warm);
+        outline-offset: 3px;
+      }
+
+      .switch-chip__name {
         font-weight: 600;
       }
 
-      .meta span {
+      .switch-chip__meta {
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+
+      .feature-card {
+        position: relative;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: minmax(0, 0.95fr) minmax(280px, 1.05fr);
+        gap: 24px;
+        padding: 28px;
+        margin-bottom: 26px;
+      }
+
+      .feature-card--error {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-copy,
+      .feature-visual,
+      .check-grid,
+      .collection-card,
+      .icon-card {
+        position: relative;
+        z-index: 1;
+      }
+
+      .feature-copy {
+        display: grid;
+        align-content: start;
+        gap: 16px;
+      }
+
+      .feature-topline,
+      .feature-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .feature-copy h2,
+      .collection-card h2 {
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 0.98;
+      }
+
+      .feature-visual {
+        display: grid;
+        gap: 14px;
+      }
+
+      .feature-hero {
+        width: 100%;
+        border-radius: 22px;
+        border: 1px solid rgb(255 255 255 / 0.08);
+        background: rgb(255 255 255 / 0.03);
+      }
+
+      .check-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 12px;
+      }
+
+      .check-frame {
+        margin: 0;
+        padding: 10px;
+        border-radius: 18px;
+        border: 1px solid rgb(255 255 255 / 0.08);
+        background: rgb(255 255 255 / 0.03);
+      }
+
+      .check-frame img {
+        width: 100%;
+        border-radius: 12px;
+        display: block;
+      }
+
+      .check-frame figcaption {
+        margin-top: 8px;
+        color: var(--muted);
+        font-size: 0.78rem;
+      }
+
+      .action-link,
+      .asset-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 14px;
+        border: 1px solid rgb(var(--collection-accent-rgb) / 0.28);
+        background: rgb(var(--collection-accent-rgb) / 0.08);
+        color: var(--text);
+        text-decoration: none;
+        transition:
+          transform 180ms ease,
+          border-color 180ms ease,
+          background 180ms ease;
+      }
+
+      .action-link:hover,
+      .asset-link:hover {
+        transform: translateY(-1px);
+        border-color: rgb(var(--collection-accent-rgb) / 0.46);
+        background: rgb(var(--collection-accent-rgb) / 0.14);
+      }
+
+      .collection-stack {
+        display: grid;
+        gap: 20px;
+      }
+
+      .collection-card {
+        position: relative;
+        overflow: hidden;
+        padding: 26px;
+      }
+
+      .collection-card.is-active {
+        border-color: rgb(var(--collection-accent-rgb) / 0.38);
+      }
+
+      .collection-card__header {
+        display: grid;
+        grid-template-columns: minmax(0, 0.95fr) minmax(240px, 1fr);
+        gap: 18px;
+        align-items: end;
+        margin-bottom: 22px;
+      }
+
+      .icon-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 16px;
+      }
+
+      .icon-card {
+        padding: 18px;
+        border-radius: 22px;
+        border: 1px solid rgb(255 255 255 / 0.07);
+        background:
+          radial-gradient(circle at 50% 22%, rgb(var(--collection-accent-rgb) / 0.08), transparent 38%),
+          linear-gradient(180deg, rgb(255 255 255 / 0.05), rgb(255 255 255 / 0.02));
+      }
+
+      .icon-stage {
+        display: grid;
+        place-items: center;
+        aspect-ratio: 1;
+        margin-bottom: 14px;
+        border-radius: 18px;
+        border: 1px solid rgb(255 255 255 / 0.05);
+        background:
+          radial-gradient(circle at 50% 38%, rgb(var(--collection-accent-rgb) / 0.14), transparent 34%),
+          linear-gradient(180deg, rgb(255 255 255 / 0.05), rgb(255 255 255 / 0.02));
+      }
+
+      .icon-stage img {
+        width: 92px;
+        height: 92px;
+      }
+
+      .icon-meta {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 10px;
+      }
+
+      .icon-meta h3 {
+        font-size: 1.52rem;
+      }
+
+      .icon-order {
+        color: var(--collection-warm);
         font-size: 0.75rem;
         letter-spacing: 0.18em;
         text-transform: uppercase;
-        color: var(--accent-warm);
       }
 
-      .card p {
-        margin: 10px 0 0;
+      .tag-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 14px 0 16px;
+        padding: 0;
+        list-style: none;
+      }
+
+      .tag-row li {
+        padding: 6px 10px;
+        border-radius: 999px;
+        border: 1px solid rgb(255 255 255 / 0.06);
+        background: rgb(255 255 255 / 0.03);
         color: var(--muted);
-        font-size: 0.92rem;
-        line-height: 1.7;
+        font-size: 0.75rem;
+      }
+
+      .empty-state {
+        padding: 22px;
+        border-radius: 20px;
+        border: 1px dashed rgb(var(--collection-accent-rgb) / 0.24);
+        background: rgb(255 255 255 / 0.02);
+        color: var(--muted);
+      }
+
+      .no-js {
+        margin-top: 22px;
+        padding: 18px;
+        border-radius: 20px;
+        border: 1px solid rgb(var(--collection-warm-rgb) / 0.24);
+        background: rgb(var(--collection-warm-rgb) / 0.08);
+        color: var(--text);
       }
 
       @media (prefers-reduced-motion: reduce) {
-        .card {
+        html {
+          scroll-behavior: auto;
+        }
+
+        .switch-chip,
+        .action-link,
+        .asset-link {
           transition: none;
+        }
+      }
+
+      @media (max-width: 920px) {
+        .hero,
+        .feature-card,
+        .collection-card__header {
+          grid-template-columns: 1fr;
         }
       }
 
       @media (max-width: 640px) {
         main {
           width: min(100% - 24px, 100%);
-          padding-top: 44px;
+          padding-top: 26px;
         }
 
-        .card {
-          padding: 16px;
-          border-radius: 20px;
+        .hero-copy,
+        .hero-visual,
+        .feature-card,
+        .collection-card {
+          border-radius: 24px;
         }
 
-        .icon-wrap img {
-          width: 80px;
-          height: 80px;
+        .hero-copy,
+        .feature-card,
+        .collection-card {
+          padding: 20px;
         }
 
-        .hero-mark {
-          width: 60px;
-          height: 60px;
+        .icon-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .icon-stage img {
+          width: 84px;
+          height: 84px;
         }
       }
     </style>
@@ -231,73 +562,40 @@
   <body>
     <main>
       <section class="hero">
-        <img class="hero-mark" src="./assets/ritual-glass-mark.svg" alt="Ritual Glass Icons mark" />
-        <p class="eyebrow">Static SVG Gallery</p>
-        <h1>Ritual Glass Icons</h1>
-        <p>
-          A set of ten SVG icons shaped around orbit lines, prism facets, and quiet light. The direction is
-          cool glass, pale highlights, and a restrained gold accent so the full collection feels ceremonial
-          instead of generic.
-        </p>
-        <div class="pill-row" aria-label="Gallery facts">
-          <span class="pill">10 SVG Icons</span>
-          <span class="pill">Static Showcase</span>
-          <span class="pill">Pages Ready</span>
+        <div class="hero-copy">
+          <div class="hero-stack">
+            <img id="hero-mark" class="hero-mark" src="./assets/ritual-glass-mark.svg" alt="SVG Concept Lab mark" />
+            <p class="eyebrow">Concept-driven SVG collections</p>
+            <h1 id="page-title">SVG Concept Lab</h1>
+            <p id="page-description">
+              A growing repository of concept-driven SVG collections built as frontend-design experiments.
+            </p>
+            <div id="site-pills" class="pill-row" aria-label="Repository facts"></div>
+            <div id="page-status" class="page-status" aria-label="Collection status" aria-live="polite"></div>
+          </div>
         </div>
+
+        <aside class="hero-visual" aria-label="Collection hero artwork">
+          <img id="hero-art" src="./assets/ritual-glass-hero.svg" alt="Ritual Glass hero artwork" />
+        </aside>
       </section>
 
-      <section class="grid">
-        <article class="card">
-          <div class="icon-wrap"><img src="./icons/01-luminous-orbit-seal.svg" alt="" aria-hidden="true" /></div>
-          <div class="meta"><h2>Luminous Orbit Seal</h2><span>01</span></div>
-          <p>A signature orbit emblem with a broken ring and a calm central core.</p>
-        </article>
-        <article class="card">
-          <div class="icon-wrap"><img src="./icons/02-prism-bloom.svg" alt="" aria-hidden="true" /></div>
-          <div class="meta"><h2>Prism Bloom</h2><span>02</span></div>
-          <p>Crystal facets and petals layered into a bloom that feels precise and alive.</p>
-        </article>
-        <article class="card">
-          <div class="icon-wrap"><img src="./icons/03-crescent-portal.svg" alt="" aria-hidden="true" /></div>
-          <div class="meta"><h2>Crescent Portal</h2><span>03</span></div>
-          <p>A quiet threshold built from a crescent arc, a slit, and almost no extra noise.</p>
-        </article>
-        <article class="card">
-          <div class="icon-wrap"><img src="./icons/04-comet-loop.svg" alt="" aria-hidden="true" /></div>
-          <div class="meta"><h2>Comet Loop</h2><span>04</span></div>
-          <p>A comet tail crossing a loop, tuned to feel fast without getting loud.</p>
-        </article>
-        <article class="card">
-          <div class="icon-wrap"><img src="./icons/05-archive-halo.svg" alt="" aria-hidden="true" /></div>
-          <div class="meta"><h2>Archive Halo</h2><span>05</span></div>
-          <p>An archive form with a halo line, made to close the first half with calm weight.</p>
-        </article>
-        <article class="card">
-          <div class="icon-wrap"><img src="./icons/06-lumen-orbit.svg" alt="" aria-hidden="true" /></div>
-          <div class="meta"><h2>Lumen Orbit</h2><span>06</span></div>
-          <p>A colder orbit mark that introduces metallic light and controlled fragmentation.</p>
-        </article>
-        <article class="card">
-          <div class="icon-wrap"><img src="./icons/07-prism-petal.svg" alt="" aria-hidden="true" /></div>
-          <div class="meta"><h2>Prism Petal</h2><span>07</span></div>
-          <p>A petal silhouette tightened by gemstone cuts and a cooler vertical tension.</p>
-        </article>
-        <article class="card">
-          <div class="icon-wrap"><img src="./icons/08-pulse-crown.svg" alt="" aria-hidden="true" /></div>
-          <div class="meta"><h2>Pulse Crown</h2><span>08</span></div>
-          <p>Wave peaks translated into a ceremonial crown with a breathing rhythm.</p>
-        </article>
-        <article class="card">
-          <div class="icon-wrap"><img src="./icons/09-monolith-lens.svg" alt="" aria-hidden="true" /></div>
-          <div class="meta"><h2>Monolith Lens</h2><span>09</span></div>
-          <p>A tall monolith and glowing lens distilled into a poised measuring totem.</p>
-        </article>
-        <article class="card">
-          <div class="icon-wrap"><img src="./icons/10-aether-knot.svg" alt="" aria-hidden="true" /></div>
-          <div class="meta"><h2>Aether Knot</h2><span>10</span></div>
-          <p>Two ribbons crossing into a final knot that reads as circulation and connection.</p>
-        </article>
+      <section class="switcher-shell" aria-labelledby="collection-switcher-label">
+        <p id="collection-switcher-label">Collection Switcher</p>
+        <nav id="collection-switcher" class="switcher-row" aria-label="Collection switcher"></nav>
       </section>
+
+      <section id="featured-collection" aria-label="Featured collection"></section>
+      <section id="collection-list" class="collection-stack" aria-label="Collection list"></section>
+
+      <noscript>
+        <div class="no-js">
+          JavaScript is required to render the collection catalog. You can still inspect the current published manifest at
+          <a href="./collections/ritual-glass/collection.json">./collections/ritual-glass/collection.json</a>.
+        </div>
+      </noscript>
     </main>
+
+    <script type="module" src="./scripts/site-catalog.mjs"></script>
   </body>
 </html>

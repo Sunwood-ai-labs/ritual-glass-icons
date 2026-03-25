@@ -1,0 +1,174 @@
+{
+  "slug": "ritual-glass",
+  "status": "published",
+  "displayOrder": 1,
+  "name": {
+    "en": "Ritual Glass",
+    "ja": "Ritual Glass"
+  },
+  "summary": {
+    "en": "Ceremonial orbit-and-prism icons with cool glow, pale glass, and restrained gold accents.",
+    "ja": "軌道線とプリズムを基調にした、静かな発光と淡い金差しの儀式的アイコン集です。"
+  },
+  "description": {
+    "en": "The first published collection. Ritual Glass explores halos, crescent thresholds, archive marks, and crystalline petals through a consistent cool-glass visual language created with the Codex frontend-design skill.",
+    "ja": "最初の公開コレクションです。Ritual Glass は、Codex の frontend-design スキルで設計した冷たいガラス調の世界観を軸に、ハロー、三日月の門、アーカイブ印、結晶の花弁を展開します。"
+  },
+  "mark": "../../assets/ritual-glass-mark.svg",
+  "hero": "../../assets/ritual-glass-hero.svg",
+  "screenshots": {
+    "desktop": "./checks/desktop-check.png",
+    "mobile": "./checks/mobile-check.png"
+  },
+  "credits": {
+    "skill": "frontend-design",
+    "repositoryRole": "Experiment repository for the Codex frontend-design skill."
+  },
+  "theme": {
+    "surface": "#081322",
+    "accent": "#8fefff",
+    "accentWarm": "#f8d4a0"
+  },
+  "icons": [
+    {
+      "id": "luminous-orbit-seal",
+      "order": 1,
+      "name": {
+        "en": "Luminous Orbit Seal",
+        "ja": "光環の封印"
+      },
+      "description": {
+        "en": "A signature orbit emblem with a broken ring and a calm central core.",
+        "ja": "欠けた輪郭と静かな中心核で構成した、象徴的な軌道印です。"
+      },
+      "file": "./icons/01-luminous-orbit-seal.svg",
+      "tags": ["orbit", "seal", "signature"]
+    },
+    {
+      "id": "prism-bloom",
+      "order": 2,
+      "name": {
+        "en": "Prism Bloom",
+        "ja": "プリズムの花"
+      },
+      "description": {
+        "en": "Crystal facets and petals layered into a bloom that feels precise and alive.",
+        "ja": "結晶の面と花弁を重ね、精密さと生命感を両立させた意匠です。"
+      },
+      "file": "./icons/02-prism-bloom.svg",
+      "tags": ["prism", "floral", "faceted"]
+    },
+    {
+      "id": "crescent-portal",
+      "order": 3,
+      "name": {
+        "en": "Crescent Portal",
+        "ja": "三日月の門"
+      },
+      "description": {
+        "en": "A quiet threshold built from a crescent arc, a slit, and almost no extra noise.",
+        "ja": "三日月の弧と細い裂け目だけで構成した、静かな閾のモチーフです。"
+      },
+      "file": "./icons/03-crescent-portal.svg",
+      "tags": ["crescent", "portal", "threshold"]
+    },
+    {
+      "id": "comet-loop",
+      "order": 4,
+      "name": {
+        "en": "Comet Loop",
+        "ja": "彗星のループ"
+      },
+      "description": {
+        "en": "A comet tail crossing a loop, tuned to feel fast without getting loud.",
+        "ja": "彗星の尾が輪を横切る、速さを秘めつつ過剰に騒がしくならない形です。"
+      },
+      "file": "./icons/04-comet-loop.svg",
+      "tags": ["comet", "motion", "loop"]
+    },
+    {
+      "id": "archive-halo",
+      "order": 5,
+      "name": {
+        "en": "Archive Halo",
+        "ja": "アーカイブの光輪"
+      },
+      "description": {
+        "en": "An archive form with a halo line, made to close the first half with calm weight.",
+        "ja": "保管庫の形に光輪を重ね、前半を静かな重みで締めるアイコンです。"
+      },
+      "file": "./icons/05-archive-halo.svg",
+      "tags": ["archive", "halo", "vault"]
+    },
+    {
+      "id": "lumen-orbit",
+      "order": 6,
+      "name": {
+        "en": "Lumen Orbit",
+        "ja": "ルーメン軌道"
+      },
+      "description": {
+        "en": "A colder orbit mark that introduces metallic light and controlled fragmentation.",
+        "ja": "金属光と制御された断片感を加えた、より冷たい軌道印です。"
+      },
+      "file": "./icons/06-lumen-orbit.svg",
+      "tags": ["orbit", "lumen", "fragment"]
+    },
+    {
+      "id": "prism-petal",
+      "order": 7,
+      "name": {
+        "en": "Prism Petal",
+        "ja": "プリズムの花弁"
+      },
+      "description": {
+        "en": "A petal silhouette tightened by gemstone cuts and a cooler vertical tension.",
+        "ja": "宝石のカットと縦方向の緊張感で引き締めた花弁シルエットです。"
+      },
+      "file": "./icons/07-prism-petal.svg",
+      "tags": ["petal", "gem", "vertical"]
+    },
+    {
+      "id": "pulse-crown",
+      "order": 8,
+      "name": {
+        "en": "Pulse Crown",
+        "ja": "脈動の冠"
+      },
+      "description": {
+        "en": "Wave peaks translated into a ceremonial crown with a breathing rhythm.",
+        "ja": "波形の頂点を、呼吸するような律動を持つ儀式の冠へ変換しました。"
+      },
+      "file": "./icons/08-pulse-crown.svg",
+      "tags": ["pulse", "crown", "wave"]
+    },
+    {
+      "id": "monolith-lens",
+      "order": 9,
+      "name": {
+        "en": "Monolith Lens",
+        "ja": "モノリスのレンズ"
+      },
+      "description": {
+        "en": "A tall monolith and glowing lens distilled into a poised measuring totem.",
+        "ja": "高い石碑と発光レンズを、静かに佇む計測のトーテムへ凝縮しました。"
+      },
+      "file": "./icons/09-monolith-lens.svg",
+      "tags": ["monolith", "lens", "totem"]
+    },
+    {
+      "id": "aether-knot",
+      "order": 10,
+      "name": {
+        "en": "Aether Knot",
+        "ja": "エーテル結び"
+      },
+      "description": {
+        "en": "Two ribbons crossing into a final knot that reads as circulation and connection.",
+        "ja": "二本の帯が交差し、循環と接続を感じさせる最終結節を形作ります。"
+      },
+      "file": "./icons/10-aether-knot.svg",
+      "tags": ["knot", "ribbon", "connection"]
+    }
+  ]
+}

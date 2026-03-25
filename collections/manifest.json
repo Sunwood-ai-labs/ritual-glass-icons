@@ -1,0 +1,14 @@
+{
+  "site": {
+    "title": "SVG Concept Lab",
+    "tagline": "Concept-driven SVG collections built as frontend-design experiments.",
+    "description": "Experiment repository for the Codex frontend-design skill with a growing library of concept-driven SVG collections."
+  },
+  "defaultCollection": "ritual-glass",
+  "collections": [
+    {
+      "slug": "ritual-glass",
+      "manifest": "./ritual-glass/collection.json"
+    }
+  ]
+}

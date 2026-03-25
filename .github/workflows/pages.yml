@@ -37,6 +37,9 @@ jobs:
       - name: Validate static site
         run: node ./scripts/validate-site.mjs
 
+      - name: Smoke test collection flow
+        run: node ./scripts/smoke-test-collection-flow.mjs
+
       - name: Stage pages artifact
         shell: pwsh
         run: ./scripts/stage-pages.ps1

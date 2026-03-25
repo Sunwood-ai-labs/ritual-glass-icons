@@ -1,7 +1,7 @@
 {
-  "name": "Ritual Glass Icons",
-  "short_name": "RitualGlass",
-  "description": "Ten premium SVG icons presented in a static showcase.",
+  "name": "SVG Concept Lab",
+  "short_name": "SVG Lab",
+  "description": "A growing repository of concept-driven SVG collections.",
   "icons": [
     {
       "src": "./assets/favicon.svg",
