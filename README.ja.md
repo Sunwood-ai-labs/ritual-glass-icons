@@ -39,12 +39,26 @@ uv run python -m http.server 4173
 
 その後 `http://127.0.0.1:4173` を開いてください。
 
-## 🖼️ 確認画像
-### Desktop check
-![Desktop browser check](./assets/checks/desktop-check.png)
+## 🖼️ SVG プレビュー
+<p align="center">
+  <img src="./icons/01-luminous-orbit-seal.svg" alt="Luminous Orbit Seal" width="72" />
+  <img src="./icons/02-prism-bloom.svg" alt="Prism Bloom" width="72" />
+  <img src="./icons/03-crescent-portal.svg" alt="Crescent Portal" width="72" />
+  <img src="./icons/04-comet-loop.svg" alt="Comet Loop" width="72" />
+  <img src="./icons/05-archive-halo.svg" alt="Archive Halo" width="72" />
+</p>
 
-### Mobile check
-![Mobile browser check](./assets/checks/mobile-check.png)
+<p align="center">
+  <img src="./icons/06-lumen-orbit.svg" alt="Lumen Orbit" width="72" />
+  <img src="./icons/07-prism-petal.svg" alt="Prism Petal" width="72" />
+  <img src="./icons/08-pulse-crown.svg" alt="Pulse Crown" width="72" />
+  <img src="./icons/09-monolith-lens.svg" alt="Monolith Lens" width="72" />
+  <img src="./icons/10-aether-knot.svg" alt="Aether Knot" width="72" />
+</p>
+
+<p align="center">
+  <sub>README では SVG の実ファイルをそのまま表示しています。ブラウザ確認用スクリーンショットは <code>assets/checks/</code> に残しています。</sub>
+</p>
 
 ## 🧩 アイコン一覧
 | No. | 名称 | ファイル |
