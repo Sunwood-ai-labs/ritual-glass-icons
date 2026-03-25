@@ -22,6 +22,9 @@
   <img src="./assets/ritual-glass-hero.svg" alt="Ritual Glass Icons hero artwork" width="960" />
 </p>
 
+> This repository is an experiment repo for the Codex `frontend-design` skill.  
+> The SVG designs in this collection were created with that skill.
+
 ## ✨ Overview
 This repository packages a curated set of ten decorative SVG icons and a static gallery page for browsing them in one place. The visual direction stays intentionally narrow: cool glass gradients, pale highlights, gentle gold accents, and a ceremonial interface mood.
 
