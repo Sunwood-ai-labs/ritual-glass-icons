@@ -1,0 +1,18 @@
+<svg width="128" height="128" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Pulse Crown</title>
+  <defs>
+    <linearGradient id="crownStroke" x1="4" y1="7" x2="20" y2="16" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DDF8FF"/>
+      <stop offset="1" stop-color="#57D9FF"/>
+    </linearGradient>
+    <radialGradient id="crownGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12 11) rotate(90) scale(7.8)">
+      <stop stop-color="#EAFBFF" stop-opacity="0.46"/>
+      <stop offset="1" stop-color="#0F1A35" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="12" cy="12" r="7.8" fill="url(#crownGlow)"/>
+  <path d="M3.85 15.02C5.23 15.02 5.98 10.82 8.22 10.82C10.47 10.82 10.54 16.42 12 16.42C13.46 16.42 13.53 8.65 15.78 8.65C18.02 8.65 18.77 13.26 20.15 13.26" stroke="url(#crownStroke)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M9.84 16.3C10.74 16.3 11.15 12.66 12 12.66C12.85 12.66 13.26 16.3 14.16 16.3" stroke="url(#crownStroke)" stroke-width="1.2" stroke-linecap="round" opacity="0.95"/>
+  <path d="M12 4.78L13.28 6.18L12 7.6L10.72 6.18L12 4.78Z" fill="#EAFBFF" fill-opacity="0.4" stroke="url(#crownStroke)" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M12 7.6V10" stroke="url(#crownStroke)" stroke-width="1.2" stroke-linecap="round"/>
+</svg>

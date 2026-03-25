@@ -1,0 +1,35 @@
+<svg width="1200" height="640" viewBox="0 0 1200 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="118" y1="64" x2="1036" y2="572" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#081221"/>
+      <stop offset="1" stop-color="#040B14"/>
+    </linearGradient>
+    <radialGradient id="auraA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(276 174) rotate(90) scale(206 272)">
+      <stop stop-color="#72E6FF" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#72E6FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="auraB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(912 180) rotate(90) scale(196 264)">
+      <stop stop-color="#F5D29F" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#F5D29F" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="214" y1="136" x2="990" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FBFF"/>
+      <stop offset="0.52" stop-color="#77EBFF"/>
+      <stop offset="1" stop-color="#F5D29F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="640" rx="42" fill="url(#bg)"/>
+  <rect x="22" y="22" width="1156" height="596" rx="28" stroke="rgba(255,255,255,0.12)"/>
+  <circle cx="276" cy="174" r="206" fill="url(#auraA)"/>
+  <circle cx="912" cy="180" r="196" fill="url(#auraB)"/>
+  <path d="M170 126C212 93.6 271.6 74.4 338.2 74.4C482.76 74.4 600 184.16 600 319.58C600 378 578.08 431.68 541.5 473.32C499.56 521.8 440.56 554.22 374.12 564.26" stroke="url(#line)" stroke-width="16" stroke-linecap="round"/>
+  <path d="M110.8 540.6C89.52 503.52 77.5 461.14 77.5 416.48C77.5 368.58 91.22 323.16 115.9 284.58" stroke="url(#line)" stroke-width="16" stroke-linecap="round" opacity="0.85"/>
+  <path d="M202 482.4C239.34 380.04 367.48 320.74 475.82 343.44" stroke="url(#line)" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="387.6" cy="388.2" r="40" fill="#F7FBFF"/>
+  <circle cx="590.8" cy="145.4" r="16" fill="#F5D29F"/>
+  <path d="M808 158L866 190L866 258L808 290L750 258L750 190L808 158Z" fill="rgba(124,232,255,0.08)" stroke="url(#line)" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M942 126L978 144L960 180L920 168L942 126Z" fill="rgba(245,210,159,0.1)" stroke="url(#line)" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M988 346C1030 346 1052 238 1120 238" stroke="url(#line)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M904 430C954 470 1014 484 1064 460C1117 434 1134 368 1170 352" stroke="url(#line)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M986 370L1014 398L986 426L958 398L986 370Z" fill="rgba(247,251,255,0.18)" stroke="#F5D29F" stroke-width="6" stroke-linejoin="round"/>
+</svg>

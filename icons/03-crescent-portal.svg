@@ -1,0 +1,20 @@
+<svg width="128" height="128" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Crescent Portal</title>
+  <defs>
+    <linearGradient id="moonStroke" x1="7" y1="3.5" x2="17.8" y2="20" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DFF6FF"/>
+      <stop offset="0.55" stop-color="#7CDFFF"/>
+      <stop offset="1" stop-color="#F7D6A7"/>
+    </linearGradient>
+    <radialGradient id="portalGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12.6 11.2) rotate(90) scale(7.4)">
+      <stop stop-color="#EEF9FF" stop-opacity="0.75"/>
+      <stop offset="0.52" stop-color="#6EE0FF" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#09142E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="12.4" cy="11.8" rx="7.8" ry="8.6" fill="url(#portalGlow)"/>
+  <path d="M16.78 3.9C14.76 3.42 12.44 3.86 10.56 5.24C7.12 7.77 6.39 12.59 8.92 16.03C10.45 18.11 12.84 19.26 15.29 19.28C13.89 20.08 12.22 20.48 10.46 20.38C7.52 20.21 4.88 18.66 3.48 16.06C1.11 11.65 2.76 6.14 7.17 3.76C10.22 2.12 13.92 2.4 16.78 3.9Z" stroke="url(#moonStroke)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M12.25 7.18V15.92" stroke="url(#moonStroke)" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M10.35 18.02H14.15" stroke="url(#moonStroke)" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M14.85 7.98V15.14" stroke="#EAF8FF" stroke-opacity="0.44" stroke-width="1.1" stroke-linecap="round"/>
+</svg>

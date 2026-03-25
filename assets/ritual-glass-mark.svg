@@ -1,0 +1,22 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="markStroke" x1="60" y1="44" x2="196" y2="214" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FBFF"/>
+      <stop offset="0.48" stop-color="#7DEAFF"/>
+      <stop offset="1" stop-color="#F5D29F"/>
+    </linearGradient>
+    <radialGradient id="markGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(128 128) rotate(90) scale(82)">
+      <stop stop-color="#F7FBFF" stop-opacity="0.95"/>
+      <stop offset="0.48" stop-color="#82ECFF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#06101D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="#06101D"/>
+  <circle cx="128" cy="128" r="82" fill="url(#markGlow)"/>
+  <path d="M82.2 64.6C91.32 57.57 104.1 53.4 118.38 53.4C149.37 53.4 174.5 76.92 174.5 105.94C174.5 118.46 169.8 129.97 161.96 138.9C152.97 149.3 140.32 156.25 126.08 158.4" stroke="url(#markStroke)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M69.4 153.2C64.84 145.3 62.26 136.27 62.26 126.76C62.26 116.61 65.2 107.03 70.3 98.94" stroke="url(#markStroke)" stroke-width="12" stroke-linecap="round" opacity="0.9"/>
+  <path d="M86.16 153.5C94.1 131.74 121.48 119.14 144.52 124.04" stroke="url(#markStroke)" stroke-width="8.8" stroke-linecap="round"/>
+  <path d="M98.4 169.6C107.12 173.88 118.18 174.98 127.72 171.78" stroke="url(#markStroke)" stroke-width="7.4" stroke-linecap="round" opacity="0.86"/>
+  <circle cx="129.8" cy="129.2" r="14.6" fill="#F7FBFF"/>
+  <circle cx="171.4" cy="78.4" r="7.2" fill="#F7D6A8"/>
+</svg>

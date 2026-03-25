@@ -1,0 +1,19 @@
+<svg width="128" height="128" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Archive Halo</title>
+  <defs>
+    <linearGradient id="archiveStroke" x1="6" y1="5.2" x2="18.2" y2="19.2" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FBFF"/>
+      <stop offset="0.52" stop-color="#7EE2F5"/>
+      <stop offset="1" stop-color="#A8F0D7"/>
+    </linearGradient>
+    <linearGradient id="archiveFill" x1="7.2" y1="9.2" x2="16.8" y2="18.2" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0FBFF" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#7CE3F8" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+  <path d="M7.08 6.1C8.23 4.85 10.03 4.02 12 4.02C13.97 4.02 15.77 4.85 16.92 6.1" stroke="url(#archiveStroke)" stroke-width="1.55" stroke-linecap="round"/>
+  <path d="M5.95 11.1C5.95 9.94 6.89 9 8.05 9H14.18L18.05 12.84V16.35C18.05 17.51 17.11 18.45 15.95 18.45H8.05C6.89 18.45 5.95 17.51 5.95 16.35V11.1Z" fill="url(#archiveFill)" stroke="url(#archiveStroke)" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M14.2 9.02V12.64H18.02" stroke="url(#archiveStroke)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M11.92 11.66V15.9" stroke="url(#archiveStroke)" stroke-width="1.25" stroke-linecap="round" opacity="0.92"/>
+  <path d="M9.35 13.78H10.38" stroke="url(#archiveStroke)" stroke-width="1.25" stroke-linecap="round" opacity="0.75"/>
+</svg>

@@ -1,0 +1,26 @@
+<svg width="128" height="128" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Luminous Orbit Seal</title>
+  <defs>
+    <radialGradient id="core" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12 12) rotate(90) scale(8.5)">
+      <stop stop-color="#F7FBFF" stop-opacity="0.82"/>
+      <stop offset="0.55" stop-color="#81E8FF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#11203D" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stroke" x1="5" y1="4" x2="19" y2="20" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF8FF"/>
+      <stop offset="0.48" stop-color="#72E8F9"/>
+      <stop offset="1" stop-color="#F5D6A1"/>
+    </linearGradient>
+    <linearGradient id="orbit" x1="8" y1="9" x2="17" y2="15" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8BF0FF"/>
+      <stop offset="1" stop-color="#EAF8FF"/>
+    </linearGradient>
+  </defs>
+  <circle cx="12" cy="12" r="8.5" fill="url(#core)"/>
+  <path d="M7.02 5.45C8.37 4.41 10.08 3.8 12 3.8C16.53 3.8 20.2 7.47 20.2 12C20.2 13.96 19.51 15.76 18.35 17.16C17.07 18.72 15.22 19.78 13.11 20.08" stroke="url(#stroke)" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M5.15 15.96C4.46 14.78 4.06 13.41 4.06 11.95C4.06 10.37 4.52 8.89 5.31 7.64" stroke="url(#stroke)" stroke-width="1.8" stroke-linecap="round" opacity="0.9"/>
+  <path d="M8.12 14.47C9.24 11.39 13.11 9.6 16.36 10.28" stroke="url(#orbit)" stroke-width="1.45" stroke-linecap="round"/>
+  <path d="M9.7 16.77C11.02 17.4 12.67 17.55 14.12 17.08" stroke="url(#orbit)" stroke-width="1.25" stroke-linecap="round" opacity="0.85"/>
+  <circle cx="12.18" cy="12.1" r="1.5" fill="#F7FBFF" fill-opacity="0.95"/>
+  <circle cx="16.88" cy="7.35" r="0.88" fill="#F5D6A1" fill-opacity="0.92"/>
+</svg>

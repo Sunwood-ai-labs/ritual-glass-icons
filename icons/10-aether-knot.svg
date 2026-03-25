@@ -1,0 +1,22 @@
+<svg width="128" height="128" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Aether Knot</title>
+  <defs>
+    <linearGradient id="knotA" x1="4" y1="7.5" x2="19.4" y2="16.2" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6DE7FF"/>
+      <stop offset="1" stop-color="#5B7CFF"/>
+    </linearGradient>
+    <linearGradient id="knotB" x1="5.2" y1="16.6" x2="18.6" y2="7.8" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF9FF"/>
+      <stop offset="0.72" stop-color="#78E6FF"/>
+      <stop offset="1" stop-color="#FFD6A8"/>
+    </linearGradient>
+    <radialGradient id="knotGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12 12) rotate(90) scale(7.9)">
+      <stop stop-color="#F6FDFF" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#10182E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="12" cy="12" r="7.9" fill="url(#knotGlow)"/>
+  <path d="M4.6 9.42C7.12 6.68 10.18 6.03 12.36 7.15C14.58 8.29 15.06 11.22 16.82 12.12C18.22 12.84 19.45 12.44 20 11.92" stroke="url(#knotA)" stroke-width="1.95" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M4 15.44C6.42 17.22 9.38 17.98 11.76 16.96C14.32 15.86 15.12 12.74 16.94 11.74C18.35 10.96 19.42 11.22 20.1 11.64" stroke="url(#knotB)" stroke-width="1.95" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M11.98 9.9L14.08 12L11.98 14.1L9.88 12L11.98 9.9Z" fill="#F8FCFF" fill-opacity="0.28" stroke="#FFD6A8" stroke-width="1.05" stroke-linejoin="round"/>
+</svg>

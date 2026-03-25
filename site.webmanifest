@@ -1,0 +1,16 @@
+{
+  "name": "Ritual Glass Icons",
+  "short_name": "RitualGlass",
+  "description": "Ten premium SVG icons presented in a static showcase.",
+  "icons": [
+    {
+      "src": "./assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "theme_color": "#06101d",
+  "background_color": "#06101d",
+  "display": "standalone"
+}

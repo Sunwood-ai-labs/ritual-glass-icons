@@ -1,0 +1,25 @@
+<svg width="128" height="128" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Monolith Lens</title>
+  <defs>
+    <linearGradient id="monolithFill" x1="12" y1="4" x2="12" y2="20" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#13213E" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#2D6BFF" stop-opacity="0.28"/>
+    </linearGradient>
+    <linearGradient id="monolithStroke" x1="7" y1="4" x2="17.5" y2="20" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8F7FF"/>
+      <stop offset="0.6" stop-color="#8FF6FF"/>
+      <stop offset="1" stop-color="#6A83FF"/>
+    </linearGradient>
+    <radialGradient id="lensGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12 12.3) rotate(90) scale(4.6)">
+      <stop stop-color="#F5FDFF" stop-opacity="0.96"/>
+      <stop offset="0.44" stop-color="#8FF6FF" stop-opacity="0.46"/>
+      <stop offset="1" stop-color="#173155" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="7.35" y="3.95" width="9.3" height="16.1" rx="4.4" fill="url(#monolithFill)" stroke="url(#monolithStroke)" stroke-width="1.6"/>
+  <ellipse cx="12" cy="12.24" rx="3.18" ry="4.12" fill="url(#lensGlow)" stroke="url(#monolithStroke)" stroke-width="1.2"/>
+  <ellipse cx="12" cy="12.24" rx="1.62" ry="2.08" stroke="url(#monolithStroke)" stroke-width="1.05" opacity="0.9"/>
+  <path d="M14.7 6.55L16.2 8.46" stroke="url(#monolithStroke)" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M5.42 9.18H6.56" stroke="url(#monolithStroke)" stroke-width="1.15" stroke-linecap="round" opacity="0.82"/>
+  <path d="M17.44 15.3H18.58" stroke="url(#monolithStroke)" stroke-width="1.15" stroke-linecap="round" opacity="0.82"/>
+</svg>

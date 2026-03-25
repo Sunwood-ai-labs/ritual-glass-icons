@@ -1,0 +1,28 @@
+<svg width="128" height="128" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Prism Bloom</title>
+  <defs>
+    <radialGradient id="bloomCore" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12 12) rotate(90) scale(8.8)">
+      <stop stop-color="#FCFEFF" stop-opacity="0.9"/>
+      <stop offset="0.45" stop-color="#8DEBD8" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#1A244A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bloomStroke" x1="6" y1="4.5" x2="18.5" y2="19" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FCFF"/>
+      <stop offset="0.55" stop-color="#79EAD4"/>
+      <stop offset="1" stop-color="#F2D19B"/>
+    </linearGradient>
+    <linearGradient id="petalFill" x1="7.5" y1="6.4" x2="16.5" y2="17.8" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DFF9FF" stop-opacity="0.78"/>
+      <stop offset="1" stop-color="#74E0D5" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <circle cx="12" cy="12" r="8.8" fill="url(#bloomCore)"/>
+  <path d="M12 5.25L15.8 7.45V11.85L12 14.05L8.2 11.85V7.45L12 5.25Z" fill="url(#petalFill)" stroke="url(#bloomStroke)" stroke-width="1.55" stroke-linejoin="round"/>
+  <path d="M12 2.95L13.72 5.36L12 6.52L10.28 5.36L12 2.95Z" fill="#F5D6A1" fill-opacity="0.28" stroke="url(#bloomStroke)" stroke-width="1.25" stroke-linejoin="round"/>
+  <path d="M17.98 7.08L17.22 9.96L15.22 9.2L15.7 6.26L17.98 7.08Z" fill="#7DEADA" fill-opacity="0.16" stroke="url(#bloomStroke)" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M17.1 15.9L14.48 15.2L15.08 13.12L17.86 13.56L17.1 15.9Z" fill="#9CEEFF" fill-opacity="0.14" stroke="url(#bloomStroke)" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M12.7 19.78L10.18 18.14L11.42 16.34L13.68 17.2L12.7 19.78Z" fill="#F0F8FF" fill-opacity="0.14" stroke="url(#bloomStroke)" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M5.64 16.16L6.3 13.34L8.34 13.98L7.94 16.78L5.64 16.16Z" fill="#7DEADA" fill-opacity="0.12" stroke="url(#bloomStroke)" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M6.28 7.26L8.74 8.04L8.14 10.04L5.48 9.4L6.28 7.26Z" fill="#F5D6A1" fill-opacity="0.14" stroke="url(#bloomStroke)" stroke-width="1.2" stroke-linejoin="round"/>
+  <circle cx="12" cy="9.55" r="0.8" fill="#F8FCFF"/>
+</svg>

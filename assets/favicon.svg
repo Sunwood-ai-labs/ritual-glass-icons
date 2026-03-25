@@ -1,0 +1,21 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ring" x1="14" y1="12" x2="50" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FBFF"/>
+      <stop offset="0.48" stop-color="#7EEBFF"/>
+      <stop offset="1" stop-color="#F7D6A8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(32 32) rotate(90) scale(20)">
+      <stop stop-color="#EAFBFF" stop-opacity="0.9"/>
+      <stop offset="0.45" stop-color="#7EEBFF" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#06101D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="#07111F"/>
+  <circle cx="32" cy="32" r="20" fill="url(#glow)"/>
+  <path d="M20.4 17.6C23.2 15.34 27.21 14 31.54 14C41.04 14 48.74 21.08 48.74 29.82C48.74 33.93 47.03 37.67 44.2 40.38C41.67 42.85 38.28 44.39 34.54 44.79" stroke="url(#ring)" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M17.4 39.56C15.93 36.97 15.12 34.03 15.12 30.94C15.12 27.8 15.96 24.83 17.53 22.23" stroke="url(#ring)" stroke-width="4.5" stroke-linecap="round" opacity="0.9"/>
+  <path d="M24.94 40.25C27.1 35.42 33.18 32.63 38.22 33.88" stroke="url(#ring)" stroke-width="3.2" stroke-linecap="round"/>
+  <circle cx="32.24" cy="31.96" r="4.8" fill="#F7FBFF"/>
+  <circle cx="43.48" cy="20.72" r="2.25" fill="#F7D6A8"/>
+</svg>

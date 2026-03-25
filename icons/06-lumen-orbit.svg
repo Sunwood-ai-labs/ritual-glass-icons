@@ -1,0 +1,20 @@
+<svg width="128" height="128" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Lumen Orbit</title>
+  <defs>
+    <linearGradient id="orbitStroke" x1="5.2" y1="5.1" x2="18.8" y2="18.4" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FBFF"/>
+      <stop offset="0.48" stop-color="#7CE8FF"/>
+      <stop offset="1" stop-color="#3C64FF"/>
+    </linearGradient>
+    <radialGradient id="orbitCore" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12 12.2) rotate(90) scale(7.2)">
+      <stop stop-color="#F8FCFF" stop-opacity="0.9"/>
+      <stop offset="0.5" stop-color="#82ECFF" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#0D1430" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="12" cy="12.1" rx="8.1" ry="8.7" fill="url(#orbitCore)" transform="rotate(-14 12 12.1)"/>
+  <path d="M6.88 5.98C8.33 4.83 10.22 4.15 12.27 4.15C16.91 4.15 20.67 7.63 20.67 11.93C20.67 16.23 16.91 19.71 12.27 19.71C8.58 19.71 5.44 17.5 4.34 14.42" stroke="url(#orbitStroke)" stroke-width="1.8" stroke-linecap="round" transform="rotate(-14 12 12)"/>
+  <circle cx="12.08" cy="12.08" r="1.72" fill="#F7FBFF"/>
+  <path d="M16.38 15.26L18.2 15.9L17.62 17.74L15.74 17.12L16.38 15.26Z" fill="#D5F7FF" fill-opacity="0.3" stroke="url(#orbitStroke)" stroke-width="1.1" stroke-linejoin="round"/>
+  <path d="M6.38 6.1L6.78 7L7.68 7.4L6.78 7.8L6.38 8.7L5.98 7.8L5.08 7.4L5.98 7L6.38 6.1Z" fill="#EAF8FF"/>
+</svg>

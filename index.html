@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ritual Glass Icons</title>
+    <meta
+      name="description"
+      content="A polished static gallery for ten ceremonial SVG icons with orbit, prism, and halo motifs."
+    />
+    <meta name="theme-color" content="#06101d" />
+    <meta property="og:title" content="Ritual Glass Icons" />
+    <meta
+      property="og:description"
+      content="Ten premium SVG icons presented in a static showcase with cool glass gradients and calm geometry."
+    />
+    <meta property="og:image" content="./assets/ritual-glass-hero.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;700&display=swap");
+
+      :root {
+        --bg: #06101d;
+        --bg-soft: rgba(9, 18, 34, 0.78);
+        --card: rgba(14, 26, 46, 0.7);
+        --line: rgba(183, 240, 255, 0.2);
+        --text: #edf8ff;
+        --muted: #99b7c7;
+        --accent: #8fefff;
+        --accent-warm: #f8d4a0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--text);
+        font-family: "Manrope", sans-serif;
+        background:
+          radial-gradient(circle at 18% 18%, rgba(98, 228, 255, 0.18), transparent 28%),
+          radial-gradient(circle at 80% 14%, rgba(244, 210, 156, 0.12), transparent 26%),
+          radial-gradient(circle at 70% 76%, rgba(112, 122, 255, 0.15), transparent 30%),
+          linear-gradient(160deg, #050c16 0%, #091321 48%, #050b17 100%);
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+        background-size: 32px 32px;
+        mask-image: radial-gradient(circle at center, black 45%, transparent 95%);
+        pointer-events: none;
+      }
+
+      main {
+        width: min(1180px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 64px 0 88px;
+      }
+
+      .hero {
+        display: grid;
+        gap: 18px;
+        margin-bottom: 42px;
+      }
+
+      .hero-mark {
+        width: 72px;
+        height: 72px;
+      }
+
+      .eyebrow {
+        margin: 0;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        color: var(--accent);
+        font-size: 0.76rem;
+      }
+
+      h1 {
+        margin: 0;
+        max-width: 8ch;
+        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(3.4rem, 8vw, 6.4rem);
+        line-height: 0.92;
+        font-weight: 600;
+      }
+
+      .hero p {
+        margin: 0;
+        max-width: 48rem;
+        color: var(--muted);
+        line-height: 1.8;
+        font-size: 1rem;
+      }
+
+      .pill-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .pill {
+        padding: 8px 12px;
+        border: 1px solid rgba(183, 240, 255, 0.18);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.04);
+        color: var(--muted);
+        font-size: 0.78rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 18px;
+      }
+
+      .card {
+        position: relative;
+        overflow: hidden;
+        padding: 20px;
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0)),
+          var(--card);
+        backdrop-filter: blur(18px);
+        box-shadow:
+          inset 0 1px 0 rgba(255, 255, 255, 0.08),
+          0 24px 60px rgba(0, 0, 0, 0.34);
+        transition:
+          transform 220ms ease,
+          border-color 220ms ease,
+          box-shadow 220ms ease,
+          background 220ms ease;
+      }
+
+      .card::after {
+        content: "";
+        position: absolute;
+        inset: auto -10% -45% 35%;
+        height: 120px;
+        background: radial-gradient(circle, rgba(143, 239, 255, 0.16), transparent 62%);
+        pointer-events: none;
+      }
+
+      .icon-wrap {
+        display: grid;
+        place-items: center;
+        aspect-ratio: 1;
+        border-radius: 20px;
+        margin-bottom: 16px;
+        background:
+          radial-gradient(circle at 50% 40%, rgba(121, 224, 255, 0.16), transparent 42%),
+          linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+        border: 1px solid rgba(255, 255, 255, 0.04);
+      }
+
+      .icon-wrap img {
+        width: 88px;
+        height: 88px;
+      }
+
+      .meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 12px;
+      }
+
+      .meta h2 {
+        margin: 0;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.55rem;
+        font-weight: 600;
+      }
+
+      .meta span {
+        font-size: 0.75rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--accent-warm);
+      }
+
+      .card p {
+        margin: 10px 0 0;
+        color: var(--muted);
+        font-size: 0.92rem;
+        line-height: 1.7;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .card {
+          transition: none;
+        }
+      }
+
+      @media (max-width: 640px) {
+        main {
+          width: min(100% - 24px, 100%);
+          padding-top: 44px;
+        }
+
+        .card {
+          padding: 16px;
+          border-radius: 20px;
+        }
+
+        .icon-wrap img {
+          width: 80px;
+          height: 80px;
+        }
+
+        .hero-mark {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <img class="hero-mark" src="./assets/ritual-glass-mark.svg" alt="Ritual Glass Icons mark" />
+        <p class="eyebrow">Static SVG Gallery</p>
+        <h1>Ritual Glass Icons</h1>
+        <p>
+          A set of ten SVG icons shaped around orbit lines, prism facets, and quiet light. The direction is
+          cool glass, pale highlights, and a restrained gold accent so the full collection feels ceremonial
+          instead of generic.
+        </p>
+        <div class="pill-row" aria-label="Gallery facts">
+          <span class="pill">10 SVG Icons</span>
+          <span class="pill">Static Showcase</span>
+          <span class="pill">Pages Ready</span>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <div class="icon-wrap"><img src="./icons/01-luminous-orbit-seal.svg" alt="" aria-hidden="true" /></div>
+          <div class="meta"><h2>Luminous Orbit Seal</h2><span>01</span></div>
+          <p>A signature orbit emblem with a broken ring and a calm central core.</p>
+        </article>
+        <article class="card">
+          <div class="icon-wrap"><img src="./icons/02-prism-bloom.svg" alt="" aria-hidden="true" /></div>
+          <div class="meta"><h2>Prism Bloom</h2><span>02</span></div>
+          <p>Crystal facets and petals layered into a bloom that feels precise and alive.</p>
+        </article>
+        <article class="card">
+          <div class="icon-wrap"><img src="./icons/03-crescent-portal.svg" alt="" aria-hidden="true" /></div>
+          <div class="meta"><h2>Crescent Portal</h2><span>03</span></div>
+          <p>A quiet threshold built from a crescent arc, a slit, and almost no extra noise.</p>
+        </article>
+        <article class="card">
+          <div class="icon-wrap"><img src="./icons/04-comet-loop.svg" alt="" aria-hidden="true" /></div>
+          <div class="meta"><h2>Comet Loop</h2><span>04</span></div>
+          <p>A comet tail crossing a loop, tuned to feel fast without getting loud.</p>
+        </article>
+        <article class="card">
+          <div class="icon-wrap"><img src="./icons/05-archive-halo.svg" alt="" aria-hidden="true" /></div>
+          <div class="meta"><h2>Archive Halo</h2><span>05</span></div>
+          <p>An archive form with a halo line, made to close the first half with calm weight.</p>
+        </article>
+        <article class="card">
+          <div class="icon-wrap"><img src="./icons/06-lumen-orbit.svg" alt="" aria-hidden="true" /></div>
+          <div class="meta"><h2>Lumen Orbit</h2><span>06</span></div>
+          <p>A colder orbit mark that introduces metallic light and controlled fragmentation.</p>
+        </article>
+        <article class="card">
+          <div class="icon-wrap"><img src="./icons/07-prism-petal.svg" alt="" aria-hidden="true" /></div>
+          <div class="meta"><h2>Prism Petal</h2><span>07</span></div>
+          <p>A petal silhouette tightened by gemstone cuts and a cooler vertical tension.</p>
+        </article>
+        <article class="card">
+          <div class="icon-wrap"><img src="./icons/08-pulse-crown.svg" alt="" aria-hidden="true" /></div>
+          <div class="meta"><h2>Pulse Crown</h2><span>08</span></div>
+          <p>Wave peaks translated into a ceremonial crown with a breathing rhythm.</p>
+        </article>
+        <article class="card">
+          <div class="icon-wrap"><img src="./icons/09-monolith-lens.svg" alt="" aria-hidden="true" /></div>
+          <div class="meta"><h2>Monolith Lens</h2><span>09</span></div>
+          <p>A tall monolith and glowing lens distilled into a poised measuring totem.</p>
+        </article>
+        <article class="card">
+          <div class="icon-wrap"><img src="./icons/10-aether-knot.svg" alt="" aria-hidden="true" /></div>
+          <div class="meta"><h2>Aether Knot</h2><span>10</span></div>
+          <p>Two ribbons crossing into a final knot that reads as circulation and connection.</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
